@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ascii-wallpaper-generator"
+version = "0.1.0"
+description = "Render colorful ASCII logos and text as desktop wallpapers."
+requires-python = ">=3.10"
+dependencies = ["Pillow>=11.3,<13"]
+
+[project.scripts]
+ascii-wallpaper = "ascii_wallpaper.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ascii_wallpaper"]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100

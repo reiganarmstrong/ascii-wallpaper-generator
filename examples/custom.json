@@ -1,0 +1,11 @@
+{
+  "logo_file": "mountain.txt",
+  "palette": ["#00dfff", "#6787ff", "#bf70ff"],
+  "rows": [
+    {"label": "Project", "value": "ASCII wallpaper", "color": "#00dfff"},
+    {"label": "Mood", "value": "Above the clouds", "color": "#6787ff"},
+    {"label": "Focus", "value": "Keep it simple", "color": "#bf70ff"}
+  ],
+  "text_position": "left",
+  "scale": 1.4
+}
